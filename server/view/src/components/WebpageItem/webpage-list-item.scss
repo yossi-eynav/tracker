@@ -1,0 +1,31 @@
+.webpage-list-item {
+    display: flex;
+    flex-flow: row;
+    border: 1px solid grey;
+
+    .date {
+        min-width: 200px;
+        border-right: 1px solid grey;
+        padding: 15px 10px;
+    }
+    
+    .url {
+        flex-grow: 4;
+        padding: 15px 10px;
+    }
+
+    &:nth-child(odd) {
+        background-color: #fff;
+    }
+
+     &:nth-child(even) {
+        background-color: rgb(235, 235,235);
+    }
+
+    &.marker-green {
+        background-color: #93fd93;
+    }
+    &.marker-yellow {
+        background-color: rgb(255, 255, 106);
+    }
+}
